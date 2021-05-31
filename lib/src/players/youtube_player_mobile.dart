@@ -133,8 +133,8 @@ class _MobileYoutubePlayerState extends State<RawYoutubePlayer>
         final feature = uri?.queryParameters['feature'];
         if (feature == 'emb_rel_pause' && uri!.queryParameters['v'] != null) {
           controller.load(uri.queryParameters['v']!);
-        } else {
-          url_launcher.launch(uri.toString());
+//         } else {
+//           url_launcher.launch(uri.toString());
         }
         return NavigationActionPolicy.CANCEL;
       },
